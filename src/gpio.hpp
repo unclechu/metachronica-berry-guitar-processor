@@ -11,7 +11,7 @@
 
 #define GPIO_BASE 0x20200000UL
 
-#define GPIO_GPFSEL1 1
+#define GPIO_GPFSEL1 1 // ACT led
 #define GPIO_GPCLR0 10
 
 #endif //GPIO_H

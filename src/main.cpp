@@ -6,7 +6,7 @@
  * @see {@link https://www.gnu.org/licenses/agpl-3.0.txt|License}
  */
 
-#include "gpio.h"
+#include "gpio.hpp"
 
 volatile unsigned int *gpio;
 
@@ -21,6 +21,7 @@ int main(void)
 	}
 }
 
+extern "C"
 int _start(void)
 {
 	main();

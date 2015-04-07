@@ -9,7 +9,7 @@ ALL_CFLAGS = $(CFLAGS) -mfpu=vfp -mfloat-abi=hard -march=armv6zk -mtune=arm1176j
 
 kernel.elf:
 	test -d $(BUILD_DIR) || mkdir $(BUILD_DIR)
-	$(ARMGNU)-gcc $(ALL_CFLAGS) $(SRC_DIR)/main.c -o $(BUILD_DIR)/kernel.elf
+	$(ARMGNU)-g++ $(ALL_CFLAGS) $(SRC_DIR)/main.cpp -o $(BUILD_DIR)/kernel.elf
 
 kernel.img: kernel.elf
 	test -d $(BUILD_DIR) || mkdir $(BUILD_DIR)
